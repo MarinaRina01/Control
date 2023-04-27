@@ -33,6 +33,31 @@ string[] GetArray(int size)
     }
     return array;
 }
+
+string[] Perebor(string[] array, int size)
+{
+    int count = 0;
+    for (int i = 0; i < size; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            count++;
+        }
+    }
+    string[] matrix = new string[count];
+    int j = 0;
+    for (int i = 0; i < size; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            matrix[j] = array[i];
+            j++;
+        }
+    }
+    return matrix;
+}
+
+
 void PrintMatrix(string[] array)
 {
     string text = "[" + string.Join(", ", array) + "]";
