@@ -59,7 +59,6 @@ string[] Perebor(string[] array, int size)
     return matrix;
 }
 
-
 void PrintMatrix(string[] array)
 {
     string text = "[" + string.Join(", ", array) + "]";
