@@ -12,6 +12,10 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
+int size = SetNumber("строк");
+string [] array = GetArray(size);
+PrintMatrix(array);
+
 int SetNumber(string text)
 {
     Console.Write($"Введите количество {text}: ");
@@ -28,4 +32,9 @@ string[] GetArray(int size)
         array[i] = Console.ReadLine();
     }
     return array;
+}
+void PrintMatrix(string[] array)
+{
+    string text = "[" + string.Join(", ", array) + "]";
+    Console.WriteLine(text);
 }
