@@ -15,6 +15,8 @@
 int size = SetNumber("строк");
 string [] array = GetArray(size);
 PrintMatrix(array);
+string[] matrix = Perebor(array, size);
+PrintMatrix(matrix);
 
 int SetNumber(string text)
 {
